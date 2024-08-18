@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristina Garcia</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    
+<body>
+  <!-- Header of Cristina Garcia, with logo and links -->
+  <header class="main-header">
+    <div class="container-main-header">
+      <!-- website logo -->
+      <a href="#hero" class="logo" >
+        <img class="logo-img" src="assets/img/Cristina.png" alt="Big-cake" />
+       </a>
+      <!-- website links that are linked with the sections -->
+      <nav class="links">
+        <a class="links-main-header" href="#hero">Home</a>
+        <a class="links-main-header" href="#About">About</a>
+        <a class="links-main-header"href="#services-container">Work</a>
+        <a class="links-main-header" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- The main contains all the sections links. In total they are 4 main sections:
+      #hero
+      #About
+      #services-container
+      #contact -->
+
+<main>
+
+  <!-- The first main section is the #hero. Contains a title and a button with a link to Cristina github profile-->
+  <section id="hero">
+    <h1>Code-Web developer</h1>
+    <button onclick="window.location.href='https://github.com/garmercy';">Read more</button>
+  </section>
+
+  <!-- The second main section #About is for presentation. Contains img (photo-about) & text (h2 and p)-->
+  <section id="About">
+    <div class="photo-about"></div>
+    <div class="text-about">
+      <h2>About me</h2><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et odit nam. Eaque, molestias! Quas velit consectetur corrupti expedita nihil incidunt sequi dolore, eius ipsam pariatur, rerum doloribus excepturi id.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa est dolore quibusdam harum magni, temporibus itaque aut vero, ut provident dignissimos natus rerum, porro dicta tempora magnam blanditiis? Fuga?</p>
+    </div>
+  </section>
+
+  <!-- The third main section is #services-container that contains:
+    - Title with a div that contains the principal image conected to the website repository.
+    - Another section (services) that contains 4 sections (class card)-->
+  <section id="services-container">
+      
+    <h1>Professional Website Developer</h1>
+    <div class="container-img-services">
+      <p>Horiseon website</p>
+      <a href="https://garmercy.github.io/Challence-1/" >
+        <img src="assets-style/Images/horiseon.jpg" alt="photo-challence" class="img-challence" />
+      </a>
+    </div>
+
+    <!-- The section services contains 4 sections (class card). 
+          The 1st it's C, the 2nd javascript, the 3rd HTML and the 4th CSS.
+          Each card contains a header and img.
+          This section shows the products and services. To make them a little more attractive the images have fades applied in css.-->
+
+    <section class="services">
+
+      <section class="card">
+        <header>C</header>
+        <img src="assets-style/Images/javascript.jpg" alt="photo-C" />
+      </section>
+    
+      <section class="card">
+        <header>Java-Script</header>
+        <img src="assets-style/Images/javascript.jpg" alt="photo-JavaScript" />
+      </section>
+
+      <section class="card">
+        <header>HTML</header>
+        <img src="assets-style/Images/javascript.jpg" alt="photo-C" />
+      </section>
+    
+      <section class="card">
+        <header>CSS</header>
+        <img src="assets-style/Images/javascript.jpg" alt="photo-JavaScript" />
+      </section>
+
+    </section>
+  
+  </section>
+
+  <!-- The fourth main section is #contact that contains a main div named (contact-box).
+    - (contact-box)div is divided in two main divs: (location) & (container-contact-info)-->
+  <section id="contact">
+    <h1>Contact us</h1>
+    <div class="contact-box">
+
+    <!-- location div contains 4 divs (container-github), (container-phone), (container-times) and (container-email). 
+         Each div contains two more divs, one for the img and the other for text.
+         -->
+      <div class="location">
+        <h3>Let's get in touch</h3>
+
+        <div class="container-github">
+          <div class="container-github-icon">
+            <img src="assets-style/Images/github.png" alt="icon-maps" class="icon"/>
+          </div>
+          <div class="container-github-text">
+            <p>garmercy</p>
+          </div>
+        </div>
+
+        <div class="container-phone">
+          <div class="container-icon">
+            <img src="assets-style/Images/telephone.png" alt="icon-phone" class="icon"/>
+          </div>
+          <div class="container-text">
+            <p>Phone:<br> +61 00 00 00 00</p>
+          </div>
+        </div>
+
+        <div class="container-times">
+          <div class="container-icon">
+            <img src="assets-style/Images/calendar.png" alt="icon-calendar" class="icon"/>
+          </div>
+          <div class="container-text">
+            <p>Opening times:<br>Monday-Friday<br>8:00am - 18:00pm </p>
+          </div>
+        </div>
+
+        <div class="container-email">
+          <div class="container-icon">
+            <img src="assets-style/Images/email.png" alt="icon-email" class="icon" />
+          </div>
+          <div class="container-text">
+            <p>Email: garmercy.mar@gmail.com</p>
+          </div>
+        </div>
+        
+      </div>
+      <!-- container info contains one h1 and some ps -->
+      <div class="container-contact-info">
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste culpa aliquam autem laborum vero. Ipsam sequi sed numquam modi laboriosam dolores vel aperiam maxime, amet, id itaque, perferendis officiis a.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione porro, incidunt iusto pariatur optio perferendis assumenda odio, consequatur, sed vero similique adipisci vel. Fugit odio aspernatur possimus autem error.
+        </p>
+      </div> 
+
+    </div>
+
+  </section>
+</main>
+<!-- This footer contains the registered brand website.-->
+<footer id="footer">
+  <h3>
+    © Cristina Garcia 2023   
+  </h3>
+</footer>  
+</body>
+</html>
+<!-- website-->
