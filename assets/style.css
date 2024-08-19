@@ -18,11 +18,21 @@ a{
 } 
 
 .titleSection{
-  color: #d864ffaa;
+  color: rgb(0, 225, 255);
+  
+  text-align: center;
 }
 
 .textSection{
-  color: rgb(0, 225, 255);
+  color: white;
+  text-align: justify;
+  padding: 30px;
+  font-size: 20px;
+}
+.subTitleSection{
+  font-size: 25px;
+  text-align: center;
+  color: #d864ffaa ;
 }
 /* -----------------NAVBAR STYLE -------------------------- */
 #containerNavbar{
@@ -110,6 +120,22 @@ a{
   white-space: nowrap;
   border-right: 1px solid #000;
   animation: typing 3s steps(30) infinite;
+}
+
+#containeMiniApp{
+  margin-right: 23px;
+}
+
+#appIcon{
+  height: 50px;
+  width: 55px;
+  border-radius: 5px;
+}
+
+#appsContainer{
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 /* ------------------------- SECTIONS ------------------------- */
 .sections{
