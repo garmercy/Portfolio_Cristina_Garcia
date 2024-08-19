@@ -7,163 +7,79 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <body>
-  <!-- Header of Cristina Garcia, with logo and links -->
-  <header class="main-header">
-    <div class="container-main-header">
-      <!-- website logo -->
-      <a href="#hero" class="logo" >
-        <img class="logo-img" src="assets/img/Cristina.png" alt="Big-cake" />
-       </a>
-      <!-- website links that are linked with the sections -->
-      <nav class="links">
-        <a class="links-main-header" href="#hero">Home</a>
-        <a class="links-main-header" href="#About">About</a>
-        <a class="links-main-header"href="#services-container">Work</a>
-        <a class="links-main-header" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-<!-- The main contains all the sections links. In total they are 4 main sections:
-      #hero
-      #About
-      #services-container
-      #contact -->
-
-<main>
-
-  <!-- The first main section is the #hero. Contains a title and a button with a link to Cristina github profile-->
-  <section id="hero">
-    <h1>Code-Web developer</h1>
-    <button onclick="window.location.href='https://github.com/garmercy';">Read more</button>
-  </section>
-
-  <!-- The second main section #About is for presentation. Contains img (photo-about) & text (h2 and p)-->
-  <section id="About">
-    <div class="photo-about"></div>
-    <div class="text-about">
-      <h2>About me</h2><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus et odit nam. Eaque, molestias! Quas velit consectetur corrupti expedita nihil incidunt sequi dolore, eius ipsam pariatur, rerum doloribus excepturi id.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa est dolore quibusdam harum magni, temporibus itaque aut vero, ut provident dignissimos natus rerum, porro dicta tempora magnam blanditiis? Fuga?</p>
-    </div>
-  </section>
-
-  <!-- The third main section is #services-container that contains:
-    - Title with a div that contains the principal image conected to the website repository.
-    - Another section (services) that contains 4 sections (class card)-->
-  <section id="services-container">
-      
-    <h1>Professional Website Developer</h1>
-    <div class="container-img-services">
-      <p>Horiseon website</p>
-      <a href="https://garmercy.github.io/Challence-1/" >
-        <img src="assets-style/Images/horiseon.jpg" alt="photo-challence" class="img-challence" />
-      </a>
-    </div>
-
-    <!-- The section services contains 4 sections (class card). 
-          The 1st it's C, the 2nd javascript, the 3rd HTML and the 4th CSS.
-          Each card contains a header and img.
-          This section shows the products and services. To make them a little more attractive the images have fades applied in css.-->
-
-    <section class="services">
-
-      <section class="card">
-        <header>C</header>
-        <img src="assets-style/Images/javascript.jpg" alt="photo-C" />
-      </section>
-    
-      <section class="card">
-        <header>Java-Script</header>
-        <img src="assets-style/Images/javascript.jpg" alt="photo-JavaScript" />
-      </section>
-
-      <section class="card">
-        <header>HTML</header>
-        <img src="assets-style/Images/javascript.jpg" alt="photo-C" />
-      </section>
-    
-      <section class="card">
-        <header>CSS</header>
-        <img src="assets-style/Images/javascript.jpg" alt="photo-JavaScript" />
-      </section>
-
-    </section>
-  
-  </section>
-
-  <!-- The fourth main section is #contact that contains a main div named (contact-box).
-    - (contact-box)div is divided in two main divs: (location) & (container-contact-info)-->
-  <section id="contact">
-    <h1>Contact us</h1>
-    <div class="contact-box">
-
-    <!-- location div contains 4 divs (container-github), (container-phone), (container-times) and (container-email). 
-         Each div contains two more divs, one for the img and the other for text.
-         -->
-      <div class="location">
-        <h3>Let's get in touch</h3>
-
-        <div class="container-github">
-          <div class="container-github-icon">
-            <img src="assets-style/Images/github.png" alt="icon-maps" class="icon"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="containerNavbar">
+      <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+              <img src="assets/img/Cristina.png" alt="Logo" width="140" height="60" class="d-inline-block align-text-top">
+          </a>
+          <!-- Toggle button for mobile view -->
+          <button id="buttonColour" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span id="buttonColour" class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section1">About me</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section2">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section3">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section4">Resume</a>
+                  </li>
+              </ul>
           </div>
-          <div class="container-github-text">
-            <p>garmercy</p>
-          </div>
-        </div>
-
-        <div class="container-phone">
-          <div class="container-icon">
-            <img src="assets-style/Images/telephone.png" alt="icon-phone" class="icon"/>
-          </div>
-          <div class="container-text">
-            <p>Phone:<br> +61 00 00 00 00</p>
-          </div>
-        </div>
-
-        <div class="container-times">
-          <div class="container-icon">
-            <img src="assets-style/Images/calendar.png" alt="icon-calendar" class="icon"/>
-          </div>
-          <div class="container-text">
-            <p>Opening times:<br>Monday-Friday<br>8:00am - 18:00pm </p>
-          </div>
-        </div>
-
-        <div class="container-email">
-          <div class="container-icon">
-            <img src="assets-style/Images/email.png" alt="icon-email" class="icon" />
-          </div>
-          <div class="container-text">
-            <p>Email: garmercy.mar@gmail.com</p>
-          </div>
-        </div>
-        
       </div>
-      <!-- container info contains one h1 and some ps -->
-      <div class="container-contact-info">
-        <h1>Lorem</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste culpa aliquam autem laborum vero. Ipsam sequi sed numquam modi laboriosam dolores vel aperiam maxime, amet, id itaque, perferendis officiis a.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione porro, incidunt iusto pariatur optio perferendis assumenda odio, consequatur, sed vero similique adipisci vel. Fugit odio aspernatur possimus autem error.
-        </p>
-      </div> 
-
-    </div>
-
-  </section>
-</main>
-<!-- This footer contains the registered brand website.-->
-<footer id="footer">
-  <h3>
-    © Cristina Garcia 2023   
-  </h3>
-</footer>  
+    </nav>
+  </header>
+  <main>
+    <!-- Section1 about me description -->
+    <section class="container" id="section1">
+      <div class="row" id='containerFrontAbout'>
+        <div class="col" id="containerTextAbout">
+          <h1 id='titleH1' class="display-4">Welcome to my portfolio </h1>
+          <h2 id="typed-text" class="display-4">I'm garmercy</h2>
+          <h1 id='titleH1' >Full Stack Developer, Front End Developer, Mobile Developer</h1>
+          <a id='linkNdec' href="https://github.com/garmercy">
+            <h2 id='githubIcon'>Check my work <img src="assets/img/github.png" alt="logo" id='icon'/></h2>  
+          </a>
+        </div>
+        <div class="col" id='containerHomeImg'>
+          <img src="assets/img/vineta.png" alt="logo" id='photo'/>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 -->
+    <section id="section2">
+      <h1>section2</h1>
+      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eum unde incidunt provident impedit delectus illo est laudantium quasi et repellendus sit a, repellat culpa veniam voluptatum magnam? Doloribus, quisquam.</h2>
+    </section>
+    <!-- Section 3 -->
+    <section id="section3">
+      <h1>section3</h1>
+      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eum unde incidunt provident impedit delectus illo est laudantium quasi et repellendus sit a, repellat culpa veniam voluptatum magnam? Doloribus, quisquam.</h2>
+    </section>
+    <!-- Section 4 -->
+    <section id="section4">
+      <h1>section4</h1>
+      <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eum unde incidunt provident impedit delectus illo est laudantium quasi et repellendus sit a, repellat culpa veniam voluptatum magnam? Doloribus, quisquam.</h2>
+    </section>
+    <footer id="footer">
+      <h3>
+        © Cristina Garcia 2024   
+      </h3>
+    </footer>   
+  </main>
 </body>
 </html>
 <!-- website-->

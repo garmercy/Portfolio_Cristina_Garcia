@@ -1,398 +1,139 @@
+/* -------------------------- GENERAL STYLE ------------------------- */
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-    font-family: 'Play', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Play', sans-serif;
 }
 
 html{
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
+a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #d864ffaa;
+} 
+
+/* -----------------NAVBAR STYLE -------------------------- */
+#containerNavbar{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* This is the header style of the website.*/
-.main-header{
-    background-color: rgb(252, 121, 153);
-    padding:0px 50px 10px;
-    width: 100%;
-    display: block;  
-    background:black; 
+.navbar-brand {
+  color: white; 
 }
-.logo{
-    display: inline-block;
-    font-size: 30px;
-    padding-top:10px ;
-    display:inline-flex;
-}
-/* EDIT NAVBAR */
-.logo-img{
-  height: 2em;
-  width: 5em;
-  padding: 0px;
-  border-radius: 5px;
-  margin: 0px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo-img:hover {
-  filter: drop-shadow(0 0 2em #d864ffaa);
-}
-/* EDIT NAVBAR */
-#logo {
-    height: 4em;
-    width: 10em;
-    padding: 0px;
-    will-change: filter;
-    transition: filter 300ms;
-    border-radius: 5px;
-    margin: 0px;
-  }
 
-.container-main-header{
-    flex-direction: row;
-    padding-top: 10px;
-    font-size: 20px;
+.navbar-brand:hover {
+  color: lightgray; 
 }
-/* EDIT */
-#containerFrontAbout{
-  margin-top: 80px;
-  margin-bottom: 80px;
+
+#buttonColour{
+  background-color: rgb(0, 225, 255);
 }
+#buttonColour:hover{
+  background-color: rgb(186, 247, 255);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .nav-link {
+  color: rgb(0, 225, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .nav-link:hover {
+  color: #d864ffaa;
+}
+
+/* --------------------------- SECTION1 ABOUT ME ----------------*/
+.container{
+  border-radius: 35px;
+  display: flex;
+  padding:80px;
+  padding-top:150px;
+}
+
+#containerHomeImg{
+  animation: shake 2s ease-in-out infinite;
+  border-radius: 35px;
+}
+
+#photo{
+  height: 25em;
+  width: 25em;
+  margin-left: 60px;
+}
+
+#containerTextAbout{
+  grid-row: auto;
+  text-align: center;
+}
+
 #githubIcon:hover{
   color:#d864ffaa ;
   transition: 0.3s;
 }
+#githubIcon{
+  color: white;
+  text-decoration: none;
+}
+
+#linkNdec{
+  text-decoration: none;
+}
+
 #icon{
-  width: 10%;
+  width: 15%;
   height: 15%;
   margin-left: 20px;
-  margin-top: 10px;
-}
-#appIcon{
-  height: 50px;
-  width: 50px;
 }
 
-/* EDIT */
-.links{
-    float:right;
-    margin-block-start: 1em;
-    padding-inline-start: 40px;
-    margin-top: 30px;  
-}
-a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #d864ffaa;
-} 
-.links-main-header:hover{
-    color: rgb(0, 225, 255);
-    
-    transition: 0.1; 
+#titleH1{
+  color: rgb(0, 225, 255);
 }
 
-/* This is the style of the hero, the first main section of the website. */
-#hero{
-    color: orange;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 80vh;
-    background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    )
-    ,url(Images/coding.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    padding: 20px;
-}
-#hero button{
-    font-size: 30px;
-    padding: 15px;
-    border-radius: 15px;
-    margin-top: 3%;
-    color: black;
-    background:linear-gradient(to top, orange, orangered);
-    border: none;
-    font-family: 'Gabriela', serif;
-}
-#hero h1{
-    font-size: 70px;
-}
-#hero button:hover{
-    color: white;
-    cursor: pointer;
-    box-shadow:5px 5px 3px rgba(245, 240, 240, 0.6)
+#typed-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid #000;
+  animation: typing 3s steps(30) infinite;
 }
 
-/* This is the second main section of the website */
-#About{ 
-    background:linear-gradient(to top, orange, orangered);
-    justify-content: center;
-    padding-bottom: 150px;
-    padding-top:150px;
-    padding-left: 60px;
-    padding-right: 60px;
-    display: flex;
-    font-size: 30px; 
-}
-.photo-about{
-    background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    )
-    ,url(assets/img/jate.jpg);
-    background-size:cover;
-    height: 600px;
-    width: 1800px;
-    display: flex;
-    flex-direction: row;
-    margin-right: 80px;
-    border-radius: 0px 100px 0px 100px;
-    border: solid orangered 10px;   
-}
-.text-about{
-    text-align: justify;
-}
-.text-about h2{
-    font-size: 60px;
-}
-
-/* This is the third main section of the website */
-#services-container{
-    background:linear-gradient(to top, orange, orangered);
-    padding-bottom: 100px;
-    text-align: center;
-}
-#services-container h1{
-    padding: 100px;
-    font-size: 60px;
-}
-.container-img-services{
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 80px;
-    margin-top: 30px;
-}
-.container-img-services p{
-    border: solid orangered 5px;
-    padding: 20px;
-    font-size: 35px;
-    font-weight: bold;
-    border-radius: 0px 20px;
-    background:linear-gradient(to top, orange, rgb(253, 191, 76))
-}
-.img-challence{
-    border-radius: 0px 100px 0px 100px;
-    height: 100%;
-    width: 100%;
-    display: flex;  
-    opacity: 0.7;
-    transition: 0.3s;
-    border: solid orangered 5px;
-}
-.img-challence:hover{
-    opacity: 1;
-    box-shadow:10px 10px 10px orangered;
-}
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    position: center;
-    justify-content: center;
-    padding: 0px;
-}
-.text-services{
-    text-align:left;
-    font-size: 20px;  
-}
-.card {
-    flex: 0 0 300px;
-    border-width: 1px;
-    margin: 20px;
-    justify-content: center;
-    padding: 30px;
-    opacity: 0.5;
-    transition: 0.3s;
-}
-.card:hover{
-    box-shadow:7px 7px 7px black;
-    border-radius: 20px;
-    opacity: 1;
-}
-.card img{
-    width: 100%;
-    min-width: 250px;
-    max-height: 300px;
-    border-radius: 20px 0px 20px 0px;
-    border: solid orangered 5px;
-    margin-bottom: 20px; 
-}
-.card header {
-    padding: 20px;
-    background: black;
-    color: white;
-    border-radius: 0px 20px;
-    font-size: 25px;
-    text-align: center;
-    border: solid orangered 5px;
-}
-
-/* This is the fourth main section of the website */
-#contact{
-    justify-content: center;
-    padding-top:100px;
-    padding-bottom: 50px;
-    font-size: 40px;
-    color: black; 
-    background:linear-gradient(to bottom, rgb(253, 191, 76), orange);
-}
-#contact h1{
-    font-size: 60px;
-    display: block;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-/* This is the div called contact-box that contains two divs:4 divs (container-github), (container-phone), (container-times) and (container-email). 
-Each div contains two more divs, one for the img and the other for text.--> */
-.contact-box{
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-    margin-top: 50px;
-}
-.location{
-    text-align: justify;
-    width: 50%;
-    padding: 5%;
-    background:linear-gradient(to top left, orangered, orange, rgb(253, 191, 76));
-}
-.container-github{
-    background-color: orange;
-    margin-bottom: 60px;
-    margin-top: 70px;
-    display: flex;
-    padding: 10px;
-    border: solid orangered 5px;
-    border-radius: 0px 30px 0px 30px;
-}
-.container-phone{
-    background-color: orange;
-    margin-bottom: 60px;
-    display: flex;
-    padding: 10px;
-    border: solid orangered 5px;
-    border-radius: 0px 30px 0px 30px;
-}
-.container-times{
-    background-color: orange;
-    margin-bottom: 60px;
-    display: flex; 
-    padding: 10px;
-    border: solid orangered 5px;
-    border-radius: 0px 30px 0px 30px;
-}
-.container-email{
-    background-color: orange;
-    display: flex;
-    padding: 10px;
-    border: solid orangered 5px;
-    border-radius: 0px 30px 0px 30px;
-}
-.container-text{
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-    font-size: 25px;
-    text-align: left;
-    padding: 15px;
-}
-.container-github-text{
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-    font-size: 25px;  
-    text-align: left;
-    padding: 15px;
-}
-.icon{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    margin-top: 13px;
-}
-
-/* This is the second div inside contact-box */
-.container-contact-info{
-width: 50%;
-padding: 5%;
-background:linear-gradient(to top right, orangered, orange, rgb(253, 191, 76));
-}
-
-/* This is the footer of the website */
+/* ------------FOOTER-------------- */
 #footer {
     text-align: center;
     padding: 20px;
-    padding-bottom: 50px;
-    background:linear-gradient(to top, rgb(253, 191, 76), orange);
+    color: rgb(0, 225, 255);
 }
    
-/* This style is for tablets or some small desktops */
-@media only screen and (max-width: 1200px)  { 
-    .photo-about{
-        display: none;
-    }
-    .contact-box{
-    display: flex;
-    flex-direction:column;
-    }
-    .location{
-        width: 100%;
-    }
-    .container-contact-info{
-        width: 100%;
-    }
-    .container-main-header{
-        flex-direction: column;
-        display: flex;
-        text-align: center;
-    }
-    .logo{
-        align-items: center;
-        justify-content: center;
-        
-    }
+/* ----------------------- KEYFRAMES ACTIONS ------------------*/
+@keyframes typing {
+  from {
+      width: 0;
+      height: 20%;
+      color: #d864ffaa;
+  }
+  to {
+      width: 100%;
+      height: 20%;
+      color: #d864ffaa;
+  }
 }
 
-/* This style is for mobiles */
-@media only screen and (max-width: 750px) { 
-    .container-main-header{
-        flex-direction: column;
-        display: flex;
-        text-align: center;
-    }
-    .links{
-    line-height: 2;
-    } 
-    #About{
-        padding: 20px;
-    }
-
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
 }
- 
