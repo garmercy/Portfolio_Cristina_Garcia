@@ -5,7 +5,7 @@ I created this web application portfolio. The goals of this project are:
 - Create an online presence of my work.
 Having several deployed projects is a minimum requirement to receive an initial interview at many companies.
 ## Link to the website
-[Cristina Garcia React Portfolio](https://65a380c181cd9745702c8536--famous-valkyrie-82f5f9.netlify.app/)
+[Cristina Garcia Portfolio](https://garmercy.github.io/Portfolio_Cristina_Garcia/)
 
 ![photoAbout](https://github.com/garmercy/React-Portfolio/assets/138730100/447cf6e8-0981-4f1f-9ba3-15a907f0def5)
 
