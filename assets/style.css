@@ -219,6 +219,25 @@ text-decoration: none;
 #contactTitle{
   color: rgb(0, 225, 255);
 }
+
+/* ------------RESUME STYLE------------ */
+#resumeSection{
+  color: rgb(0, 225, 255);
+}
+#resumeLink{
+  font-size: 20px;
+  color: rgb(0, 225, 255);
+  display: block;
+  text-align: center;
+}
+#resumeLink:hover{
+  color: #d864ffaa;
+}
+
+#h1AboutMe{
+  text-align: left;
+  color: #d864ffaa;
+}
 /* ------------FOOTER-------------- */
 #footer {
   text-align: center;
