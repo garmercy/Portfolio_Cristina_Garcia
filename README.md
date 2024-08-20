@@ -11,7 +11,8 @@ Having several deployed projects is a minimum requirement to receive an initial 
 
 ## User Story
 ```
-I WANT to view a potential employee's deployed portfolio of work samples SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+I WANT to view a potential employee's deployed portfolio of work samples SO THAT I can review samples of their
+work and assess whether they're a good candidate for an open position
 ```
 ## Acceptance Criteria
 ```
