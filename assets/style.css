@@ -10,7 +10,9 @@
 html{
   scroll-behavior: smooth;
 }
-
+p{
+  color: white;
+}
 a{
   padding: 5px 12px;
   text-decoration: none;
@@ -19,7 +21,7 @@ a{
 
 .titleSection{
   color: rgb(0, 225, 255);
-  
+  font-size: 45px;
   text-align: center;
 }
 
@@ -30,7 +32,7 @@ a{
   font-size: 20px;
 }
 .subTitleSection{
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   color: #d864ffaa ;
 }
@@ -139,7 +141,83 @@ a{
 }
 /* ------------------------- SECTIONS ------------------------- */
 .sections{
-  padding: 20px;
+  padding: 80px;
+}
+
+/* ------------PORTFOLIO STYLE-------------- */
+.display-4{
+  border-radius: 35px;
+}
+
+#boxPortfolio{
+  margin-top: 80px;
+}
+
+#portfolio{
+  padding: 30px;
+}
+#portfolio .card {
+  transition: transform 0.3s ease-out;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.1);
+}
+
+#h1Portfolio{
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+#containerTextCard{
+border: solid rgb(0, 225, 255) 1px;
+}
+
+#containerCardPortfolio{
+  border: solid rgb(0, 225, 255) 1px;
+  border-radius: 0px;
+}
+
+#titleCard{
+  color: rgb(0, 225, 255);
+}
+
+#linkPortfolio{
+font-size: 25px;
+color: rgb(0, 225, 255);
+text-decoration: none;
+}
+
+#linkPortfolio:hover{
+  color:#d864ffaa ;
+  transition: 0.3s;
+}
+
+#textCard{
+  font-size: 20px;
+  text-align: justify;
+}
+/* ------------------------CONTACT ME STYLE ------------------------*/
+#photo2{
+  height: 20em;
+  width: 20em;
+  margin-left: 50px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#containerFrontAbout{
+  padding-top: 80px;
+}
+#icon2{
+  width: 10%;
+  height: 10%;
+  margin-left: 20px;
+}
+#contactTitle{
+  color: rgb(0, 225, 255);
 }
 /* ------------FOOTER-------------- */
 #footer {
@@ -147,7 +225,10 @@ a{
   padding: 20px;
   color: rgb(0, 225, 255);
 }
-   
+#textContact{
+  color: #d864ffaa;
+}
+  
 /* ----------------------- KEYFRAMES ACTIONS ------------------*/
 @keyframes typing {
   from {
